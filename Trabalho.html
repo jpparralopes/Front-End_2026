@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site de Estudo</title>
+    <style>
+        body{
+            background-color: dimgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>REDE DE COMPUTADORES</h1>
+    <hr>
+    <h2>TIPOS DE REDES</h2>
+    <h3>LAN</h3>
+    <p>É uma rede local que cobre uma área pequena, como uma casa, escola, laboratório ou empresa. Ela permite que computadores, impressoras e outros dispositivos compartilhem arquivos, internet e recursos internos. É uma rede rápida, com baixo custo e geralmente administrada por uma única pessoa ou organização. </p>
+    <img src="https://datasave.qsfptek.com/upload/2024-07-29/1722238619179.jpg" alt="LAN" width="300">
+    <h3>MAN</h3>
+    <p>É uma rede que cobre uma área maior, como uma cidade ou região metropolitana. Ela interliga várias LANs dentro dessa área. Normalmente é usada por empresas grandes, universidades ou provedores de internet para conectar diferentes prédios ou unidades dentro da mesma cidade.</p>
+    <img src="https://images.openai.com/static-rsc-1/ScG7A_6gc42Om2lYb2rRLxMIIPCFDCINpB6-qA0xhs0N55XqIzggMzySp9HrcENUl8DRnO9uyWd8mLmTIaMd8TPxzMfPxLLOctI-jHDWUt-sGRYntKiTrl9ICGc-PPl3avkF0pwvNt1HRvdc32WXIA" alt="MAN" width="300">
+    <h3>WAN</h3>
+    <p>É uma rede de grande alcance geográfico, podendo cobrir países ou até continentes. Ela conecta várias LANs e MANs. O maior exemplo de WAN é a Internet. Esse tipo de rede costuma ter custo mais elevado e depende de operadoras de telecomunicações para funcionar.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGIFJFrEKFzTC0-VdqMy6waXaMp8rTnPJCiQ&s" alt="WAN" width="300">
+    <h3>RESUMO</h3>
+    <ul class="lista-preta">
+       <li>A LAN é uma rede local, usada em espaços pequenos como casas, escolas ou empresas.</li>
+       <li>A MAN conecta várias redes dentro de uma cidade.</li>
+       <li>A WAN é uma rede de grande alcance, ligando cidades, países ou continentes, como a Internet.</li>
+    </ul>
+    <style>
+        .lista-preta li::marker {
+          color: rgb(0, 0, 0);
+        }
+        </style>
+    <img src="https://www.fabiobmed.com.br/wp-content/uploads/2021/03/wan-2.jpg" alt="Resumo" width="450">
+    <hr>
+    <h2>FORMULÁRIO📖</h2>
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label>Qual rede é usada para conectar uma cidade?</label><br>
+        <input type="checkbox"> Man
+        <input type="checkbox"> Wan
+        <input type="checkbox"> Lan
+    <br>
+    <br>
+    	<label>É um exemplo do que conhecemos como internet a rede :</label><br>
+		<input type="checkbox" >Man
+		<input type="checkbox" > Wan
+		<input type="checkbox" > Lan
+        <br>
+        <br>
+
+    <label>Qual rede é usada dentro de uma escola ou empresa?</label><br>
+    <input type="checkbox"> Lan
+    <input type="checkbox"> Man
+    <input type="checkbox"> Wan
+
+<br>
+<br>
+
+    <label>Qual tipo de rede cobre vários países ou continentes?</label><br>
+    <input type="checkbox"> Lan
+    <input type="checkbox"> Man
+    <input type="checkbox"> Wan
+
+<br>
+<br>
+
+    <label>Qual rede tem alcance maior que a LAN e menor que a WAN?</label><br>
+    <input list="redes2" name="rede2">
+    <datalist id="redes2">
+    <option value="Lan">
+    <option value="Man">
+    <option value="Wan">
+</datalist>
+<br>
+<br>
+
+    <label>Qual dos tipos de Rede é mais indicada para utilizar em um escritório? </label><br>
+		<input list="redes" name="rede">
+			<datalist id="redes">
+			<option value="Lan">
+			<option value="Man">
+			<option value="Wan">
+		
+			</datalist>
+		<input type="submit">
+
+</body>
+</html>
