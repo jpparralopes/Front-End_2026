@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leãozão da Floresta 🦁</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body {
+            background-color: #e2e8f0;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* === CARD CENTRAL COM O CENÁRIO DA SELVA === */
+        #cardLeao {
+            width: 460px;
+            max-width: 95vw;
+            height: 680px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 3rem;
+            box-shadow: 0 35px 60px -15px rgb(0 0 0 / 0.3);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        #cardLeao::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.25);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .game-content {
+            position: relative;
+            z-index: 10;
+            height: 100%;
+            padding: 2.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .animal-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .animal-container img {
+            max-height: 260px;
+            width: auto;
+            object-fit: contain;
+            transition: all 0.5s ease;
+            filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.35));
+        }
+
+        /* === BOTÃO FIXO "NÃO CLIQUE AQUI" === */
+        .btn-nao-clique {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 50;
+            padding: 12px 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 9999px;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2);
+            transition: all 0.3s ease;
+            background-color: #64748b;
+            color: white;
+            border: none;
+        }
+
+        .btn-nao-clique:hover {
+            transform: scale(1.08);
+            background-color: #ef4444;
+            box-shadow: 0 15px 20px -3px rgb(239 68 68 / 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CARD CENTRAL – cenário da selva -->
+    <div id="cardLeao">
+        <div class="game-content">
+            <!-- HEADER -->
+            <div class="flex items-center gap-4 mb-6">
+                <div class="avatar">
+                    <div class="w-16 rounded-full ring ring-primary ring-offset-2 ring-offset-white/90">
+                        <img id="avatar" src="IhTca.png" alt="Avatar">
+                    </div>
+                </div>
+
+                <input id="nomeCriatura"
+                       type="text"
+                       value="Leãozão"
+                       class="input input-bordered w-full font-bold text-center text-xl focus:outline-none bg-white/95 border-2">
+            </div>
+
+            <!-- ANIMAL CENTRALIZADO -->
+            <div class="animal-container">
+                <img id="bichinho" src="IhTca.png" alt="Leãozão">
+            </div>
+
+            <!-- STATUS -->
+            <div class="space-y-5 mb-8">
+                <div>
+                    <span class="text-sm font-medium flex items-center gap-2 text-white drop-shadow-sm">❤️ Vida</span>
+                    <progress id="vidaBar" class="progress progress-success w-full h-3" value="100" max="100"></progress>
+                </div>
+                <div>
+                    <span class="text-sm font-medium flex items-center gap-2 text-white drop-shadow-sm">🍖 Fome</span>
+                    <progress id="fomeBar" class="progress progress-warning w-full h-3" value="100" max="100"></progress>
+                </div>
+                <div>
+                    <span class="text-sm font-medium flex items-center gap-2 text-white drop-shadow-sm">😡 Humor</span>
+                    <progress id="humorBar" class="progress progress-error w-full h-3" value="100" max="100"></progress>
+                </div>
+            </div>
+
+            <!-- BOTÃO ALIMENTAR -->
+            <div class="mt-auto">
+                <button onclick="alimentar()" 
+                        class="btn bg-purple-600 hover:bg-purple-700 text-white btn-lg w-full shadow-lg hover:scale-105 transition-all text-base font-bold flex items-center justify-center gap-2">
+                    🍖 Alimentar Leãozão
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTÃO FIXO "NÃO CLIQUE AQUI" -->
+    <a href="pagina2.html" 
+       target="_blank"
+       class="btn-nao-clique flex items-center gap-2">
+        🚫 Não clique aqui
+    </a>
+
+    <script src="Untitled-1.js"></script>
+</body>
+</html>
