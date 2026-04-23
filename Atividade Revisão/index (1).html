@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Prova</title>
+    <style>
+        body{
+            background-color: silver;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            width: 700px;
+            border-radius: 10px;
+            background-color: dimgray;
+            text-align: center;
+            margin: 0 auto;
+            padding: 10px;
+            color: antiquewhite;
+        }
+        ul {
+            list-style: none;   /* remove as bolinhas */
+            margin: 0;
+            padding: 0;
+            
+    }
+        nav ul {
+            display: flex;
+            justify-content: center; /* centraliza horizontalmente */
+            gap: 20px;               /* espaço entre os itens */
+            
+    }
+        nav li{
+            color: black;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:darkgrey;
+            width: 50%;
+            margin: 0 auto;
+            border-radius:10px;
+            padding: 6px;
+    }    
+    section{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0 auto;
+    }
+    #organizacao{
+        width: 500px;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        background-color: darkviolet;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #organizacao h2{
+        color:wheat;
+    }
+    #organizacao p{
+        color:ivory;
+        text-align: center;
+
+    }
+        #formato{
+        width: 500px;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        background-color:darkblue;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    #formato h2{
+        color:wheat;
+    }
+    #formato p{
+        color:ivory;
+        text-align: center;
+    }
+    #expectativas{
+    width: 500px;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color:darkred;
+    margin-top: 20px;
+    margin-bottom: 20px;
+        
+    }
+    #expectativas h2{
+        color:wheat;
+    }
+    #expectativas p{
+        color:ivory;
+        text-align: center;
+        
+    }
+    button{
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    </style>
+
+</head>
+<body>
+    <h1>Informações sobre a Copa Do Mundo</h1>
+    <nav>
+        <ul>
+            <li><a href="#organizacao">Organização</a></li>
+            <li><a href="#formato">Formato</a></li>
+            <li> <a href="#expectativas">Expectativas</a></li>
+        </ul> 
+    </nav>
+    <section id="organizacao">
+    <h2>🌍 Organização e Sedes</h2>
+    <p>A Copa do Mundo FIFA de 2026 será a primeira edição realizada em três países: Estados Unidos, Canadá e México. Essa será também a maior Copa da história em número de cidades-sede, com partidas distribuídas por diversas regiões da América do Norte, ampliando o alcance global do torneio.</p>
+    </section>
+    <section id="formato">
+    <h2>⚽ Novo Formato</h2>
+    <p>O torneio contará com 48 seleções, em vez das tradicionais 32. As equipes serão divididas em grupos, aumentando o número total de jogos e dando mais oportunidades para países de diferentes continentes participarem. Essa mudança foi promovida pela FIFA para tornar a competição mais inclusiva e competitiva.</p>
+    </section>
+    <section id="expectativas">
+    <h2>🏆 Expectativas e Impacto</h2>
+    <p>A edição de 2026 promete ser uma das mais assistidas da história, com grande impacto econômico e cultural nos países-sede. Além disso, seleções tradicionais e emergentes devem protagonizar jogos de alto nível, aumentando ainda mais o interesse global pelo futebol e fortalecendo o esporte em novas regiões.</p>
+    </section>
+
+    <button onclick="mostrarTabela()">Mostrar Tabela de Jogos</button>
+    <script>
+function mostrarTabela() {
+
+    const img = document.createElement("img");
+    img.src="Tabela_Jogos.png";
+    img.alt = "Tabela de Jogos";
+    img.style.width = "500px";
+    img.style.marginTop = "20px";
+
+    document.body.appendChild(img);
+}
+</script>
+    
+</body>
+</html>
